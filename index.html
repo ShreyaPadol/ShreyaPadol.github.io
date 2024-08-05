@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://unpkg.com/tailwindcss-cdn@3.4.3/tailwindcss-with-all-plugins.js"></script>
+<div class="flex flex-col min-h-dvh">
+  <nav class="w-full bg-white shadow">
+    <div class="container mx-auto px-4 md:px-6 flex items-center justify-between py-4">
+      <div class="text-xl font-bold text-foreground">My Portfolio</div>
+      <div class="space-x-6">
+        <a href="#" class="text-foreground hover:text-red-600">Home</a>
+        <a href="#about" class="text-foreground hover:text-red-600">About</a>
+        <a href="#project" class="text-foreground hover:text-red-600">Projects</a>
+        <a href="#resume" class="text-foreground hover:text-red-600">Resume</a>
+        <a href="#contact" class="text-foreground hover:text-red-600">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="w-full py-24 bg-white">
+    <div class="container mx-auto px-4 md:px-6 flex flex-col items-center text-center space-y-6">
+      <h1 class="text-4xl md:text-6xl font-bold text-foreground">Welcome to Shreya's Portfolio</h1>
+      <p class="text-xl md:text-2xl text-foreground">Discover my work and connect with me.</p>
+      <a
+        href="#"
+        class="inline-flex h-10 items-center justify-center rounded-md bg-red-600 px-8 text-sm font-medium text-white shadow transition-colors hover:bg-red-500 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+      >
+        Get in Touch
+      </a>
+    </div>
+  </section>
+
+  <section id="about" class="w-full py-24 bg-gray-100">
+    <div class="container mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center justify-between gap-10">
+      <div class="flex-1 space-y-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-foreground">About Me</h2>
+        <p class="text-muted-foreground">
+          Hi, I'm a aspiring web developer with a deep interest in obtaining a challenging web developer position in a dynamic and innovative organization where I can utilize my technical and
+          creative skills. I'm constantly learning and exploring new technologies to enhance my skills and deliver exceptional results.
+        </p>
+      </div>
+      <div class="flex-1">
+        <img
+          src="./shrey photo.jpg"
+          width="300"
+          height="300"
+          style="aspect-ratio: 500 / 500; object-fit: cover;"
+          alt="About Me"
+          class="mx-auto rounded-lg"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section id="project" class="w-full py-24 bg-white">
+    <div class="container mx-auto px-4 md:px-6 space-y-6">
+      <div class="text-center space-y-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-foreground">My Projects</h2>
+        <p class="text-muted-foreground">
+          Check out some of my recent projects and the technologies I've used to bring them to life.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="rounded-lg border bg-white text-card-foreground shadow-sm" data-v0-t="card">
+          <div class="p-6 space-y-2">
+            <h3 class="text-xl font-bold text-foreground"> <a href=""> Project 1 </a>  </h3>
+            <p class="text-muted-foreground">A web application built with React, Next.js, and Tailwind CSS.</p>
+          </div>
+        </div>
+        <div class="rounded-lg border bg-white text-card-foreground shadow-sm" data-v0-t="card">
+          <div class="p-6 space-y-2">
+            <h3 class="text-xl font-bold text-foreground">Project 2</h3>
+            <p class="text-muted-foreground">A mobile-friendly e-commerce site built with Vue.js and Nuxt.js.</p>
+          </div>
+        </div>
+        <div class="rounded-lg border bg-white text-card-foreground shadow-sm" data-v0-t="card">
+          <div class="p-6 space-y-2">
+            <h3 class="text-xl font-bold text-foreground">Project 3</h3>
+            <p class="text-muted-foreground">A real-time chat application built with Socket.IO and Express.js.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="resume" class="w-full py-24 bg-gray-100">
+    <div class="container mx-auto px-4 md:px-6 space-y-6">
+      <div class="text-center space-y-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-foreground">My Resume</h2>
+        <p class="text-muted-foreground">Here's a summary of my education and skills.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="rounded-lg border bg-white text-card-foreground shadow-sm" data-v0-t="card">
+          <div class="p-6 space-y-4">
+            <h3 class="text-xl font-bold text-foreground">Education</h3>
+            <div class="space-y-2">
+              <div class="flex items-center justify-between">
+                <div class="font-medium text-foreground">Dwarkadas J Sanghvi college of engineering </div>
+                <div class="text-muted-foreground"> Present</div>
+              </div>
+              
+            </div>
+            <div class="space-y-2">
+              <div class="flex items-center justify-between">
+                <div class="font-medium text-foreground">Thakur Vidya Mandir High School and Junior College</div>
+                <div class="text-muted-foreground">2021 - 2023</div>
+              </div>
+            </div>
+            <div class="space-y-2">
+                <div class="flex items-center justify-between">
+                  <div class="font-medium text-foreground">St. John's High School </div>
+                  <div class="text-muted-foreground">2014 - 2021</div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="rounded-lg border bg-white text-card-foreground shadow-sm" data-v0-t="card">
+          <div class="p-6 space-y-4">
+            <h3 class="text-xl font-bold text-foreground">Skills</h3>
+            <div class="grid grid-cols-2 gap-2">
+              <div
+                class="inline-flex w-fit items-center whitespace-nowrap rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80"
+                data-v0-t="badge"
+              >
+                C
+              </div>
+              <div
+                class="inline-flex w-fit items-center whitespace-nowrap rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80"
+                data-v0-t="badge"
+              >
+                C++
+              </div>
+              <div
+                class="inline-flex w-fit items-center whitespace-nowrap rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80"
+                data-v0-t="badge"
+              >
+                HTML
+              </div>
+              <div
+                class="inline-flex w-fit items-center whitespace-nowrap rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80"
+                data-v0-t="badge"
+              >
+                CSS
+              </div>
+              <div
+                class="inline-flex w-fit items-center whitespace-nowrap rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80"
+                data-v0-t="badge"
+              >
+                JavaScript
+              </div>
+              <div
+                class="inline-flex w-fit items-center whitespace-nowrap rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80"
+                data-v0-t="badge"
+              >
+                Tailwind
+              </div>
+              <div
+                class="inline-flex w-fit items-center whitespace-nowrap rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80"
+                data-v0-t="badge"
+              >
+                Java
+              </div>
+              <div
+                class="inline-flex w-fit items-center whitespace-nowrap rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80"
+                data-v0-t="badge"
+              >
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="w-full py-24 bg-white">
+    <div class="container mx-auto px-4 md:px-6 space-y-6">
+      <div class="text-center space-y-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-foreground">Contact Me</h2>
+        <p class="text-muted-foreground">Feel free to reach out for collaborations or just a friendly chat.</p>
+      </div>
+      <form class="max-w-lg mx-auto space-y-4">
+        <div>
+          <label for="name" class="block text-sm font-medium text-foreground">Name</label>
+          <input
+            type="text"
+            id="name"
+            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+          />
+        </div>
+        <div>
+          <label for="email" class="block text-sm font-medium text-foreground">Email</label>
+          <input
+            type="email"
+            id="email"
+            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+          />
+        </div>
+        <div>
+          <label for="message" class="block text-sm font-medium text-foreground">Message</label>
+          <textarea
+            id="message"
+            rows="4"
+            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+          ></textarea>
+        </div>
+        <div class="text-center">
+          <button
+            type="submit"
+            class="inline-flex h-10 items-center justify-center rounded-md bg-red-600 px-8 text-sm font-medium text-white shadow transition-colors hover:bg-red-500 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+          >
+            Send Message
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="w-full bg-gray-100 py-8">
+    <div class="container mx-auto px-4 md:px-6 text-center">
+      <p class="text-sm text-muted-foreground">&copy; 2024 My Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+</div>
+
+</body>
+</html>
