@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+      .text-foreground { color: #333; }
+      .hidden { display: none; }
+    </style>
 </head>
 <body>
     <script src="https://unpkg.com/tailwindcss-cdn@3.4.3/tailwindcss-with-all-plugins.js"></script>
@@ -36,7 +40,7 @@
         </a>
       </div>
     </div>
-    <div class="md:hidden" id="mobile-menu">
+    <div class="hidden md:hidden" id="mobile-menu">
       <div class="px-4 pt-2 pb-3 space-y-1 sm:px-3">
         <a href="#" class="block text-foreground hover:text-rose-500">Home</a>
         <a href="#about" class="block text-foreground hover:text-rose-500">About</a>
@@ -57,6 +61,17 @@
       </div>
     </div>
   </nav>
+
+  <script>
+    document.getElementById('nav-toggle').addEventListener('click', function() {
+      var mobileMenu = document.getElementById('mobile-menu');
+      if (mobileMenu.classList.contains('hidden')) {
+        mobileMenu.classList.remove('hidden');
+      } else {
+        mobileMenu.classList.add('hidden');
+      }
+    });
+  </script>
   
 
   <section class="w-full py-24 bg-rose-100">
