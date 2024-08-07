@@ -4,19 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <script src="https://unpkg.com/tailwindcss-cdn@3.4.3/tailwindcss-with-all-plugins.js"></script>
 <div class="flex flex-col min-h-dvh">
   <nav class="w-full bg-white shadow">
-    <div class="container mx-auto px-4 md:px-6 flex items-center justify-between py-4">
-      <div class="text-xl font-bold text-foreground">My Portfolio</div>
-      <div class="space-x-6">
+    <div class="container mx-auto px-4 md:px-6 flex items-center justify-center py-4">
+      <div class="text-xl font-bold ">My Portfolio</div>
+      <div class="space-x-6 flex-1 flex justify-center">
         <a href="#" class="text-foreground hover:text-rose-500">Home</a>
         <a href="#about" class="text-foreground hover:text-rose-500">About</a>
         <a href="#project" class="text-foreground hover:text-rose-500">Projects</a>
         <a href="#resume" class="text-foreground hover:text-rose-500">Resume</a>
         <a href="#contact" class="text-foreground hover:text-rose-500">Contact</a>
+      </div>
+      <div class="flex items-center space-x-4">
+        <a href="https://github.com/ShreyaPadol" target="_blank" class="text-foreground hover:text-rose-500">
+          <i class="fab fa-github fa-lg"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/shreya-padol-28a362285/" target="_blank" class="text-foreground hover:text-rose-500">
+          <i class="fab fa-linkedin fa-lg"></i>
+        </a>
+        <a href="mailto:shreyapadol@icloud.com" class="text-foreground hover:text-rose-500">
+          <i class="fas fa-envelope fa-lg"></i>
+        </a>
       </div>
     </div>
   </nav>
